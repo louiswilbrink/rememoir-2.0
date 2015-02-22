@@ -1,3 +1,6 @@
 # rememoir-2.0
+a new kind of rememory
 
-a [Sails](http://sailsjs.org) application
+----------------------
+
+Stack: sails, angular, postgresql
