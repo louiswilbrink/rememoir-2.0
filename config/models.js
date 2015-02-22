@@ -17,7 +17,7 @@ module.exports.models = {
   * connections (see `config/connections.js`)                                *
   *                                                                          *
   ***************************************************************************/
-  // connection: 'localDiskDb',
+  connection: 'postgresql',
 
   /***************************************************************************
   *                                                                          *
@@ -27,6 +27,16 @@ module.exports.models = {
   * See http://sailsjs.org/#/documentation/concepts/ORM/model-settings.html  *
   *                                                                          *
   ***************************************************************************/
-  // migrate: 'alter'
+  migrate: 'alter',
 
+  /***************************************************************************
+  *                                                                          *
+  * A flag to toggle schemaless or schema mode in databases that support     *
+  * schemaless data structures. If turned off, this will allow you to store  *
+  * arbitrary data in a record. If turned on, only attributes defined in the *
+  * model's attributes object will be stored.                                *
+  *                                                                          * 
+  ***************************************************************************/
+
+  schema: true
 };
